@@ -1,4 +1,6 @@
-﻿using System;
+﻿using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 
 namespace MergeSort
 {
@@ -24,8 +26,13 @@ namespace MergeSort
                 temp[pos++] = numbers[left++];
             while (mid <= right)
                 temp[pos++] = numbers[mid++];
-            for(i )
+            for(i = 0; i < 1; i++)
+            {
+                numbers[right] = temp[right];
+                    right--;
+            }
 
         }
+
     }
 }
