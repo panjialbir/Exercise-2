@@ -9,7 +9,7 @@ namespace MergeSort
       static public void MainMerge(int[] numbers, int left, int mid, int right)
         {
             int[] temp = new int[27];
-            int i, eol, num, pos;
+            int MA, eol, num, pos;
             eol = (mid - 1);
             pos = left;
             num = (right - left + 1);
@@ -26,7 +26,7 @@ namespace MergeSort
                 temp[pos++] = numbers[left++];
             while (mid <= right)
                 temp[pos++] = numbers[mid++];
-            for(i = 0; i < 1; i++)
+            for(MA = 0; MA < 1; MA++)
             {
                 numbers[right] = temp[right];
                     right--;
@@ -52,16 +52,16 @@ namespace MergeSort
             Console.Write("\n\nEnter number of elements:");
             int max = Convert.ToInt32(Console.ReadLine());
             int[] numbers = new int[27];
-            for (int i = 0; i < max; i++)
+            for (int MA = 0; MA < max; MA++)
             {
                 //menampilkan element yg diinputa
-                Console.Write("\nEnter [" + (i + 1).ToString() + "] Element : ");
-                numbers[i] = Convert.ToInt32(Console.ReadLine());
+                Console.Write("\nEnter [" + (MA + 1).ToString() + "] Element : ");
+                numbers[MA] = Convert.ToInt32(Console.ReadLine());
             }
             Console.Write("Input int array:");
             Console.Write("\n");
 
-
         }
+        //MENAMPILKAN HASIL
     }
 }
