@@ -75,4 +75,7 @@ namespace MergeSort
 
 
     }
+    //insertion
+    class insertion
 }
+
