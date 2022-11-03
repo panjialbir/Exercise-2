@@ -72,10 +72,7 @@ namespace MergeSort
                 Console.WriteLine(numbers[MA]);
             Console.ReadLine();
         }
-
-
-    }
-
-  
+    } 
+   
 }
 
