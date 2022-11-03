@@ -9,10 +9,10 @@ namespace MergeSort
       static public void MainMerge(int[] numbers, int left, int mid, int right)
         {
             int[] temp = new int[27];
-            int 1, eol, num, pos;
+            int i, eol, num, pos;
             eol = (mid - 1);
             pos = left;
-            numbers = (right - left + 1);
+            num = (right - left + 1);
 
             //perulangan
             while ((left <= eol) && (mid <= right))
@@ -33,6 +33,19 @@ namespace MergeSort
             }
 
         }
+        //pengurutan
+        static public void SortMerge(int[] numbers, int left, int right)
+        { //rumus mergesort
+            int mid;
+            if( right > left)
+            {
+                mid = (right + left) / 2;
+                SortMerge(numbers, left, mid);
+                SortMerge(numbers, (mid + 1), right);
+                MainMerge(numbers, left, (mid + 1), right);
+            }
+        }
+        //masukkan element array
 
     }
 }
