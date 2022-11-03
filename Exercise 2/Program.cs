@@ -60,9 +60,9 @@ namespace MergeSort
             }
             Console.Write("Input int array:");
             Console.Write("\n");
-            for(int MA = 0; MA < max; MA++)
+            for(int i = 0; i < max; i++)
             {
-                Console.Write(numbers[MA] + "");
+                Console.Write(numbers[i] + " ");
                 Console.Write("\n");
             }
             //MENAMPILKAN HASIL
@@ -75,10 +75,7 @@ namespace MergeSort
 
 
     }
-    //insertion
-    class insertion
-    {
 
-    }
+  
 }
 
