@@ -46,6 +46,22 @@ namespace MergeSort
             }
         }
         //masukkan element array
+        static void Main(string[] args)
+        {
+            Console.Write("\nprogram for shorting a numeric array using merge sorting");
+            Console.Write("\n\nEnter number of elements:");
+            int max = Convert.ToInt32(Console.ReadLine());
+            int[] numbers = new int[27];
+            for (int i = 0; i < max; i++)
+            {
+                //menampilkan element yg diinputa
+                Console.Write("\nEnter [" + (i + 1).ToString() + "] Element : ");
+                numbers[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            Console.Write("Input int array:");
+            Console.Write("\n");
 
+
+        }
     }
 }
