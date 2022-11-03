@@ -60,8 +60,19 @@ namespace MergeSort
             }
             Console.Write("Input int array:");
             Console.Write("\n");
-
+            for(int MA = 0; MA < max; MA++)
+            {
+                Console.Write(numbers[MA] + "");
+                Console.Write("\n");
+            }
+            //MENAMPILKAN HASIL
+            Console.WriteLine("mergesort by recursive method");
+            SortMerge(numbers, 0, max - 1);
+            for (int MA = 0; MA < max; MA++)
+                Console.WriteLine(numbers[MA]);
+            Console.ReadLine();
         }
-        //MENAMPILKAN HASIL
+
+
     }
 }
