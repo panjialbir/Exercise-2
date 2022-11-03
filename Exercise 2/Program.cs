@@ -26,7 +26,7 @@ namespace MergeSort
                 temp[pos++] = numbers[left++];
             while (mid <= right)
                 temp[pos++] = numbers[mid++];
-            for(MA = 0; MA < 1; MA++)
+            for(MA = 0; MA < num; MA++)
             {
                 numbers[right] = temp[right];
                     right--;
